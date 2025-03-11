@@ -54,15 +54,16 @@ def Funacat3():
     
     if selector=="opcion1":
 
-        boton.config(command=Funacat5)
+        boton.config(command=Funacat4)
 
 
     if selector=="opcion2":
 
-        boton.config(command=Funacat4)
+        boton.config(command=Funacat5)
 
 def Funacat4():
-    obtenerTexto("funacat 4.txt")
+    
+    actualizar_texto("funacat 4.txt")
     boton.config(command=reinicio)
 
 def Funacat5():
@@ -80,11 +81,11 @@ def Funacat5():
         boton.config(command=Funacat7)
 
     
-def Funacat6():
-    actualizar_texto("funacat 7.txt")
-    boton.config(command=reinicio)
 def Funacat7():
     actualizar_texto("funacat6.txt")
+    boton.config(command=reinicio)
+def Funacat6():
+    actualizar_texto("funacat 7.txt")
     boton.config(command=reinicio)
 
 app.geometry("480x480")
@@ -96,7 +97,7 @@ titulo.pack()
 contenido=obtenerTexto("funacat.txt")
 A=tk.Radiobutton(app,text="A",variable=opcion, value="opcion1")
 B=tk.Radiobutton(app,text="B",variable=opcion, value="opcion2")
-boton=tk.Button(command=inicio_aventura,text="elige una opcion y presioname para iniciar la aventura")
+boton=tk.Button(command=inicio_aventura,text="elige una opcion y presioname para proseguir con la aventura")
 cuadro_de_texto=tk.Text(app,state="normal",height=15,width=50, wrap="word")
 cuadro_de_texto.insert("1.0",contenido)
 cuadro_de_texto.config(state="disabled")
