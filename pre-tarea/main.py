@@ -61,10 +61,8 @@ def Funacat3():
 
         boton.config(command=Funacat4)
 
-  
-
 def Funacat4():
-    actualizar_texto("funacat 4.txt")
+    obtenerTexto("funacat 4.txt")
     boton.config(command=reinicio)
 
 def Funacat5():
