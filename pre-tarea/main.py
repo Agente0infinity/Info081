@@ -15,10 +15,10 @@ def obtenerTexto(texto):
 
 def actualizar_texto(archivo):
 
+
     cuadro_de_texto.config(state="normal")
     cuadro_de_texto.delete("1.0",tk.END)
-    new= obtenerTexto(archivo)
-    cuadro_de_texto.insert("1.0",new)
+    cuadro_de_texto.insert("1.0",obtenerTexto(archivo))
     cuadro_de_texto.config(state="disabled")
 
 
@@ -26,7 +26,7 @@ def inicio_aventura():
 
     
     selector=opcion.get()
-    
+
     if selector=="opcion1":
 
        
@@ -48,10 +48,12 @@ def Funacat2():
     boton.config(command=reinicio)
 
 def Funacat3():
-    actualizar_texto("funacat 3.txt")
-
-    selector=opcion.get()
     
+    actualizar_texto("funacat 3.txt")
+    boton.config(command=Funacat3Nexo)
+
+def Funacat3Nexo():
+    selector=opcion.get()
     if selector=="opcion1":
 
         boton.config(command=Funacat4)
@@ -67,10 +69,12 @@ def Funacat4():
     boton.config(command=reinicio)
 
 def Funacat5():
+  
     actualizar_texto("funacat5.txt")
-
-    selector=opcion.get()
-    
+    boton.config(command=Funacat5Nexo)
+   
+def Funacat5Nexo():
+    selector=opcion.get ()    
     if selector=="opcion1":
 
         boton.config(command=Funacat6)
@@ -82,6 +86,7 @@ def Funacat5():
 
     
 def Funacat7():
+    
     actualizar_texto("funacat6.txt")
     boton.config(command=reinicio)
 def Funacat6():
