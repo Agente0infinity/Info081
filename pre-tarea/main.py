@@ -77,10 +77,10 @@ def Funacat5():
         boton.config(command=Funacat7)
 
 def Funacat6():
-    actualizar_texto("funacat7.txt")
+    actualizar_texto("funacat 7.txt")
     boton.config(command=reinicio)
 def Funacat7():
-    actualizar_texto("funacat 6.txt")
+    actualizar_texto("funacat6.txt")
     boton.config(command=reinicio)
 
 app.geometry("480x480")
