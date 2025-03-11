@@ -23,6 +23,8 @@ def actualizar_texto(archivo):
 
 
 def inicio_aventura():
+
+    
     selector=opcion.get()
     
     if selector=="opcion1":
@@ -35,6 +37,8 @@ def inicio_aventura():
 
 
         boton.config(command=Funacat3)
+
+    
 
     
     
@@ -57,6 +61,7 @@ def Funacat3():
 
         boton.config(command=Funacat4)
 
+  
 
 def Funacat4():
     actualizar_texto("funacat 4.txt")
@@ -76,11 +81,12 @@ def Funacat5():
 
         boton.config(command=Funacat7)
 
+    
 def Funacat6():
-    actualizar_texto("funacat 7.txt")
+    actualizar_texto("funacat6.txt")
     boton.config(command=reinicio)
 def Funacat7():
-    actualizar_texto("funacat6.txt")
+    actualizar_texto("funacat 7.txt")
     boton.config(command=reinicio)
 
 app.geometry("480x480")
@@ -99,7 +105,6 @@ cuadro_de_texto.config(state="disabled")
 cuadro_de_texto.pack()
 A.pack()
 B.pack()
-
 boton.pack()
 app.mainloop()
 
