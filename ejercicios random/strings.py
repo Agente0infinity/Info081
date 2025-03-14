@@ -1,3 +1,5 @@
+
+
 def contar_vocales(cadena):
     contador_vocales=0
     vocales="aeiouAEIOU"
@@ -25,4 +27,3 @@ def invertir_Cadena(cadena):
 
 print(invertir_Cadena("palabra"))
 
-def
