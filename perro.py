@@ -1,6 +1,5 @@
 import random
 import math
-import time
 class Perro:
     def __init__(self, tamaño, color, raza, ladridos):
         self.tamaño = tamaño
