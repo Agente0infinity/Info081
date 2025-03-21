@@ -18,5 +18,4 @@ class Perro:
 
 yorkshire = Perro("pequeño", "café", "yorkshire", ["guau", "bark", "wulf", "wauf"])
 
-# Hacer que el perro ladre
 print(yorkshire.ladrar())
