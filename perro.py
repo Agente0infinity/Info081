@@ -11,8 +11,7 @@ class Perro:
     def ladrar(self):
         cantidad=math.floor(random.randint(1,1000))
         for i in range(cantidad):
-            time.sleep(1)
-            print(math.floor(random.choice(self.ladridos)),end= " ")
+            print(random.choice(self.ladridos),end= " ")
          
        
 
