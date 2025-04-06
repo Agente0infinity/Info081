@@ -8,7 +8,7 @@ class Perro:
         self.ladridos = ladridos  
 
     def ladrar(self):
-        cantidad=math.floor(random.randint(1,1000))
+        cantidad=math.floor(random.randint(1,25))
         for i in range(cantidad):
             print(random.choice(self.ladridos),end= " ")
          
@@ -16,4 +16,4 @@ class Perro:
 
 yorkshire = Perro("pequeño", "café", "yorkshire", ["guau", "bark", "wulf", "wauf"])
 
-print(yorkshire.ladrar())
+yorkshire.ladrar()
